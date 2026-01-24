@@ -11,106 +11,128 @@
 
 <body>
 
+    <!-- HEADER -->
     <header class="navbar">
         <div class="container navbar-content">
+
             <div class="logo">
                 <i class="ph-light ph-atom"></i>
-                <span>Brincando<span class="highlight">.Math</span>
-                    <i class="ph-light ph-radioactive"></i>
-
-                    <nav class="menu">
-                        <!-- crie um link com o nome "Módulos" crie um link com botão com o nome: "Brinque"-->
-                        <a href="#" class="btn-nav">Brincando</a>
-                        <a href="#">Math</a>
-                    </nav>
+                <span>Brincando<span class="highlight">.Math</span></span>
+                <i class="ph-light ph-radioactive"></i>
             </div>
+
+            <nav class="menu">
+                <a href="#brincarAgora" class="btn-nav">Brincando</a>
+                <a href="#cadastro">Math</a>
+            </nav>
+
+        </div>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
         <div class="container">
             <span class="tag">Brinque com a Matemática até quando você quiser!</span>
             <h1>Ame a Matemática</h1>
-            <p>A matemática é a única disciplina onde alguém compra 60 melancias sem que ninguém pergunte o porquê.
+            <p>
+                A matemática é a única disciplina onde alguém compra 60 melancias sem que ninguém pergunte o porquê.
                 Eu trato o X da questão como um ex-namorado: sei que ele existe, mas não tenho interesse em encontrar.
                 Minha conta bancária segue a regra dos números complexos, pois o saldo é puramente imaginário.
-                Dizem que a vida é um gráfico, mas a minha parece uma divisão por zero: não faz o menor sentido.
-                No fim, sou como um triângulo escaleno: estou tentando me ajustar, mas todos os meus lados estão
-                errados.</p>
-            <div class="hero-buttons">
-                <a href="brincarAgora" class="btn btn-primvary">Brincando agora</a>
-                <a href="calculo" class="btn btn-outline">Veja o resultado da sua brincadeira</a>
+                Dizem que a vida é um gráfico, mas a minha parece uma divisão por zero.
+                No fim, sou como um triângulo escaleno: tentando me ajustar, mas com todos os lados errados.
+            </p>
 
+            <div class="hero-buttons">
+                <a href="#brincarAgora" class="btn btn-primary">Brincando agora</a>
+                <a href="#cadastro" class="btn btn-outline">Veja o resultado da sua brincadeira</a>
             </div>
         </div>
     </section>
 
+    <!-- BRINCAR -->
     <section id="brincarAgora" class="section-pad">
         <div class="container">
-            <h2 class="section-title">Estudar matemática é como brincar de detetive: eu sigo todas as pistas, mas no
-                final descubro que o culpado pelo erro foi um sinal de menos que eu ignorei.</h2>
+            <h2 class="section-title">
+                Estudar matemática é como brincar de detetive:
+                sigo todas as pistas e descubro que o erro foi um sinal de menos.
+            </h2>
+
             <div class="row">
-                <div class="somaMulti">
+
+                <div class="card">
                     <div class="icon-box">
                         <i class="ph-light ph-plus"></i>
                         <i class="ph-light ph-x"></i>
                     </div>
-                    <h3>Somar e Múltiplicar</h3>
-                    <p>Somar alegria é o único cálculo onde dois mais dois vira uma festa completa. Quando a gente
-                        multiplica os sorrisos, o resultado
-                        é uma conta que nunca para de crescer. Na matemática da felicidade, o saldo é sempre positivo e
-                        a esperança não tem limite!
+                    <h3>Somar e Multiplicar</h3>
+                    <p>
+                        Somar alegria é o único cálculo onde dois mais dois vira festa.
+                        Multiplicar sorrisos é uma conta que nunca para de crescer.
                     </p>
                 </div>
-                <div class="subDiv">
-                    <i class="ph-light ph-divide"></i>
-                    <i class="ph-light ph-minus"></i>
-                </div>
-                <h3>Subtrair e Dividir</h3>
-                <p>Subtrair o estresse é impossível quando os boletos insistem em se reproduzir por conta própria.
-                    Dividir a pizza com os amigos é a prova matemática de que a fome sempre sobra e o queijo falta. No
-                    final do mês, minha conta bancária sofre uma divisão tão cruel que o saldo parece uma divisão por
-                    zero: simplesmente não existe e dá erro...
 
-                </p>
+                <div class="card">
+                    <div class="icon-box">
+                        <i class="ph-light ph-divide"></i>
+                        <i class="ph-light ph-minus"></i>
+                    </div>
+                    <h3>Subtrair e Dividir</h3>
+                    <p>
+                        Subtrair o estresse é impossível quando os boletos se multiplicam.
+                        Dividir pizza prova que a fome sempre sobra e o queijo falta.
+                    </p>
+                </div>
 
             </div>
         </div>
     </section>
 
+    <!-- CADASTRO -->
     <section id="cadastro" class="section-pad bg-darker">
         <div class="container form-wrapper">
             <h2>Faça o seu cadastro</h2>
-            <form id="formCadastro"></form>
-            <div class="input-group"></div>
-            <label for="nome">Nome Completo</label>
-            <input type="text" id="nome" placeholder="Seu nome">
-            <div class="input-group"></div>
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="seu@email.com">
-            <div class="input-group"></div>
-            <label for="Senha">Senha</label>
-            <input type="password" id="senha" placeholder="Mínimo 8 caracteres">
 
+            <form id="formCadastro">
 
-            <ul class="validation-list">
-                <li id="req-lenght" class="invalid"><i class="ph-light ph-circle"></i>Mínimo 8 caracteres</li>
-                <li id="req-upper" class="invalid"><i class="ph-light ph-circle"></i>Letra maiscula</li>
-                <li id="req-number" class="invalid"><i class="ph-light ph-circle"></i>Letra minuscula</li>
-                <li id="req-special" class="invalid"><i class="ph-light ph-circle"></i>Caracter especial</li>
-            </ul>
+                <div class="input-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" placeholder="Seu nome">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com">
+                </div>
+
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Mínimo 8 caracteres">
+                </div>
+
+                <ul class="validation-list">
+                    <li id="req-length" class="invalid">Mínimo 8 caracteres</li>
+                    <li id="req-upper" class="invalid">Letra maiúscula</li>
+                    <li id="req-lower" class="invalid">Letra minúscula</li>
+                    <li id="req-special" class="invalid">Caracter especial</li>
+                </ul>
+
+                <button type="submit" id="btnSubmit" class="btn btn-full" disabled>
+                    Finalizar Cadastro
+                </button>
+
+            </form>
         </div>
-
-        <button type="submit" id="btnSubmit" class="btn btn-full" disabled>Finalizar Cadastro</button>
-
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <p>2026 Brincando.Math - A matemática é como um relacionamento tóxico: eu tento entender os problemas, mas
-            ela sempre me pede para encontrar o X sem nunca me dizer o que eu fiz de errado!</p>
+        <p>
+            © 2026 Brincando.Math — A matemática é como um relacionamento tóxico:
+            ela sempre pede pra encontrar o X sem dizer o que eu fiz de errado.
+        </p>
     </footer>
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
